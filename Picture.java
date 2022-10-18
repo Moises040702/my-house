@@ -17,6 +17,8 @@ public class Picture
     private Circle sun;
     private Square grass;
     private Circle atardecer;
+    private Person person;
+    
     /**
      * Constructor for objects of class Picture
      */
@@ -65,6 +67,10 @@ public class Picture
         grass.changeSize(500);
         grass.makeVisible();
         sun.slowMoveVertical(140);
+        
+       ;
+        
+       
     }
     /**
      * Change the sun goes down
@@ -72,6 +78,13 @@ public class Picture
     public void atardecer()
     {
     sun.slowMoveVertical(-140);
+    Person Person1 = new Person();
+    Person1.moveLeft();
+    Person1.moveVertical(30);
+    Person1.moveHorizontal(-300);
+    Person1.makeVisible();
+    Person1.slowMoveHorizontal(300);
+    
     }    
     /**
      * Change this picture to black/white display
